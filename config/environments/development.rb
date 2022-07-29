@@ -62,7 +62,7 @@ Rails.application.configure do
     IPAddr.new("0.0.0.0/0"), # All IPv4 addresses.
     IPAddr.new("::/0"),      # All IPv6 addresses.
     "localhost",             # The localhost reserved domain.
-    "*"   # Allow this to be addressed when running in containers via docker-compose.yml.
+    "webserver.nronix.com"   # Allow this to be addressed when running in containers via docker-compose.yml.
   ]
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true
